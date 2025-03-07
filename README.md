@@ -2,7 +2,7 @@
 
 
 ## Status do projeto
-- Em andamento
+- Finalizado
 
   ## Tecnologias Utilizadas
   - Java
