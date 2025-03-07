@@ -10,7 +10,7 @@
   - NetBeans
   - MySQL
 
- ## Time de desenvolvedores
+ ## team de desenvolvedores
  - Samuel Canabarro
 
  ## Objetivo do software
