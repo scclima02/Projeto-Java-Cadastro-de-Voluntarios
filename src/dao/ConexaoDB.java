@@ -4,26 +4,22 @@
  */
 package dao;
 
-/**
- *
- * @author Beto
- */
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoDB {
-    private static final String URL = "jdbc:mysql://localhost:3306/SistemaVoluntarios";
-    private static final String USER = "root"; // substitua com seu usuário do MySQL
-    private static final String PASSWORD = ""; // substitua com sua senha do MySQL
+
+    private static final String URL = "jdbc:mysql://localhost:3306/Projeto";
+    private static final String USER = "root"; 
+    private static final String PASSWORD = "Samuel2002"; 
 
     public static Connection conectar() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
-    }
-
-    static Object getInstance() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver"); // Carrega o driver JDBC
+            return DriverManager.getConnection(URL, USER, PASSWORD);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException("Driver JDBC não encontrado!", e);
+        }
     }
 }

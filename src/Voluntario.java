@@ -2,29 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model;
-
-/**
- *
- * @author Beto
- */
-
-
 public class Voluntario {
     private int id;
     private String nome;
     private String email;
     private String telefone;
-    
-    public Voluntario() {}
 
-    public Voluntario(int id, String nome, String email, String telefone) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-    }
-
+    // Getters e Setters
     public int getId() {
         return id;
     }
@@ -57,4 +41,3 @@ public class Voluntario {
         this.telefone = telefone;
     }
 }
-
